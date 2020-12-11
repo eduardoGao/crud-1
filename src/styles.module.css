@@ -1,0 +1,42 @@
+.app {
+  /* background: red; */
+  padding: 2em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.containerUser {
+  /* background: #f2f2f2; */
+  /* padding: 1em; */
+}
+
+
+
+/* Table */
+.separation {
+  display: grid;
+  grid-template-columns: 80% 20%;
+
+}
+
+.table {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.tableItem {
+  /* background: palevioletred; */
+  margin-bottom: 1em;
+}
+
+.tableButtons button {
+  width: 100%;
+  background: none;
+  margin-bottom: 1em;
+  border-radius: .5em;
+  border: 1px solid palegreen;
+  padding: .7em 0;
+}
