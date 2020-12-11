@@ -25,6 +25,15 @@ function App() {
     ])
   }
 
+  //Eliminar usuario
+  const deleteUser = (id) => {
+    // console.log(id)
+
+    setUsers(users.filter((user) => user.id !== id))
+  }
+
+
+  console.log(users)
   return (
     <div className={styles.app}>
       <h1>CRUD App with Hooks</h1>
@@ -35,7 +44,7 @@ function App() {
         </div>
         <div className={styles.containerUser}>
           <h2>View User</h2>
-          <UserTable users={users} />
+          <UserTable users={users} deleteUser={deleteUser} />
         </div>
       </div>
     </div>
