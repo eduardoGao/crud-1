@@ -1,7 +1,7 @@
 import React from 'react'
 // import styles from '../styles.module.css'
 
-function UserTable({ users, deleteUser }) {
+function UserTable({ users, deleteUser, editRow }) {
   return (
     <table>
       <thead>
@@ -18,7 +18,9 @@ function UserTable({ users, deleteUser }) {
               <td>{user.name}</td>
               <td>{user.username}</td>
               <td>
-                <button className="button muted-button">Edit</button>
+                <button className="button muted-button" onClick={() => editRow(user)}>
+                  Edit
+                </button>
                 <button className="button muted-button" onClick={() => deleteUser(user.id)}>
                   Delete
                 </button>
